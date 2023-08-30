@@ -1,0 +1,11 @@
+<h1>Your file are uploaded</h1>
+
+{% if key3 %}
+{% for i in key3 %}
+
+Image Name : {{i.Imagename}}
+<br>
+<img src="{{MEDIA_URL}}{{i.Image.url}}" alt="" srcset="">
+
+{% endfor %}
+{% endif %}
